@@ -59,9 +59,10 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "deploy": "gh-pages -d build"
+    + "predeploy": "npm run build",
+    + "deploy": "gh-pages -d build"
   },
-  "homepage":" ./",
+  "homepage": "./",
   "devDependencies": {
     "@types/classnames": "^2.2.6",
     "@types/jest": "^23.1.1",
